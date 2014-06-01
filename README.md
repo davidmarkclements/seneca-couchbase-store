@@ -106,14 +106,13 @@ The standard Seneca query format is supported:
 As with all seneca stores, you can access the native driver, in this case, 
 the returned instance of instantiating the `node-couchbase` Connection instance. 
 
-The native driver is accesssed using `entity.native$(function(err,collection){...})`.
+The native driver is accesssed using `entity.native$(function(err, db){...})`.
 
-````
 
 ## Test
 
 Tests do not require a couchbase server to be running, 
-it uses node-couchbase modules Mock tool. 
+it uses `node-couchbase` modules Mock tool. 
 
 ```bash
 npm test
