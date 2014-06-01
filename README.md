@@ -44,27 +44,6 @@ seneca.ready(function(){
 })
 ```
 
-### Options
-
-  The object passed as the second parameter of seneca.use can
-  contain the following
-
-  * _name_ - name of the bucket to connect to
-  * _bucket_ - alias for name (default: 'default')
-  * _host_ - address of couchbase server (default: '127.0.0.1')
-  * _server_ - alias for host
-  * _port_ - the port on which the server resides (default: 8091). 
-    If desired the port can instead be provided with host, e.g. 127.0.0.1:8091
-  * _connection_ - pass a node-couchbase Connection object directly to 
-    the store, if set name/bucket host/server and port will be ignored
-  * _keyPrefix_ - it's recommend with couchbase to use as few buckets
-    as possible, no more than 5. In this case, couchbase-store can use namespacing
-    to differentiate keys in a bucket that belong to the store plugin
-    If unset, the default keyPrefix will be 'seneca-'. To have no
-    keyPrefix use keyPrefix: ''
-
-
-
 ## Install
 
 ```sh
@@ -87,6 +66,25 @@ entity.load$( {id: ...}, function(err,entity){ ... } )
 entity.list$( {property: ...}, function(err,entity){ ... } )
 entity.remove$( {id: ...}, function(err,entity){ ... } )
 ```
+
+### Options
+
+  The object passed as the second parameter of seneca.use can
+  contain the following
+
+  * _name_ - name of the bucket to connect to
+  * _bucket_ - alias for name (default: 'default')
+  * _host_ - address of couchbase server (default: '127.0.0.1')
+  * _server_ - alias for host
+  * _port_ - the port on which the server resides (default: 8091). 
+    If desired the port can instead be provided with host, e.g. 127.0.0.1:8091
+  * _connection_ - pass a node-couchbase Connection object directly to 
+    the store, if set name/bucket host/server and port will be ignored
+  * _keyPrefix_ - it's recommend with couchbase to use as few buckets
+    as possible, no more than 5. In this case, couchbase-store can use namespacing
+    to differentiate keys in a bucket that belong to the store plugin
+    If unset, the default keyPrefix will be 'seneca-'. To have no
+    keyPrefix use keyPrefix: ''
 
 
 ### Queries
