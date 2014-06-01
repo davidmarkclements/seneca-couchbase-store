@@ -1,0 +1,36 @@
+{
+  "name": "seneca-couchbase-store",
+  "version": "0.0.1",
+  "description": "Seneca data store plugin for Couchbase",
+  "main": "lib/couchbase-store.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha test/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/davidmarkclements/seneca-couchbase-store"
+  },
+  "keywords": [
+    "seneca",
+    "plugin",
+    "store",
+    "couchbase",
+    "json"
+  ],
+  "author": "David Mark Clements",
+  "license": "MIT",
+  "dependencies": {
+    "underscore": "~1.6.0",
+    "couchbase": "^1.2.4",
+    "nid": "^0.3.2"
+  },
+  "devDependencies": {
+    "async": "~0.7.0",
+    "seneca": "~0.5.15",
+    "mocha": "~1.18.2",
+    "seneca-store-test": "https://github.com/davidmarkclements/seneca-store-test/tarball/master"
+  },
+  "peerDependencies": {
+    "seneca": "*"
+  }
+}
