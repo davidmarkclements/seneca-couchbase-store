@@ -112,7 +112,10 @@ The native driver is accesssed using `entity.native$(function(err, db){...})`.
 Tests do not require a couchbase server to be running, 
 it uses `node-couchbase` modules Mock tool. 
 
+To run tests (within seneca-couchbase-store folder):
+
 ```bash
+npm install
 npm test
 ```
 
