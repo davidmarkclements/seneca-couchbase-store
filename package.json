@@ -1,6 +1,6 @@
 {
   "name": "seneca-couchbase-store",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Seneca data store plugin for Couchbase",
   "main": "lib/couchbase-store.js",
   "scripts": {
